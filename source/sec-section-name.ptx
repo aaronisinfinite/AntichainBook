@@ -10,8 +10,9 @@
   <p> Text of section 2. </p>
 
 </section>
+
 <section xml:id="sec-two-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>Section two</title>
 
   <p> Text of section one. </p>
 

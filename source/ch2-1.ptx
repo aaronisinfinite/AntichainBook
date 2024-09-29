@@ -3,7 +3,7 @@
 <section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>sage cells</title>
 
-  <p> here are sage cells using matlab/octave syntax. they should be linked as if in a notebook</p>
+  <p> here are sage cells using matlab/octave syntax. they are as if in a notebook</p>
 
   <sage language="octave">
     <input>

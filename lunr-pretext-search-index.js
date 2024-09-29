@@ -24,8 +24,8 @@ var ptx_lunr_docs = [
   "url": "ch2-1.html",
   "type": "Section",
   "number": "2.1",
-  "title": "sage cells",
-  "body": " sage cells  here are sage cells using matlab\/octave syntax. they are as if in a notebook    "
+  "title": "matlab\/octave",
+  "body": " matlab\/octave  here are sage cells using matlab\/octave syntax. they are as if in a notebook    "
 },
 {
   "id": "backmatter-2",

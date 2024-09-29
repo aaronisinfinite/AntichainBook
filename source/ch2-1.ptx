@@ -6,7 +6,7 @@
   <p> here's a sage cell. </p>
 
   <sage>
-      @language = octave
+      @octave
     <input>
     </input>
     <output>

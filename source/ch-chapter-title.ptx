@@ -9,6 +9,6 @@
 
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
-  <xi:include href="sec2-sec-name.ptx" />
+  <!--<xi:include href="sec2-sec-name.ptx" /> -->
 
 </chapter>

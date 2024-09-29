@@ -7,7 +7,7 @@
 
   <sage>
     <input>
-      
+      @language = octave
     </input>
     <output>
       

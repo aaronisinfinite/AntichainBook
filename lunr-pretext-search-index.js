@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Section two",
-  "body": " Section two  Text of section 2.  "
+  "body": " Section two  here's a sage cell.   "
 },
 {
   "id": "backmatter-2",

@@ -3,6 +3,14 @@
 <section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Section two</title>
 
-  <p> Text of section 2. </p>
+  <p> here's a sage cell. </p>
 
+  <sage>
+    <input>
+      
+    </input>
+    <output>
+      
+    </output>
+  </sage>
   </section>

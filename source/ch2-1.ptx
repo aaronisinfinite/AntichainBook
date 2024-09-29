@@ -6,11 +6,13 @@
   <p> here's a sage cell. </p>
 
   <sage>
-      @octave
+    <@language:octave>
     <input>
+      det([1 2;3 4])
     </input>
     <output>
       
     </output>
   </sage>
+
   </section>

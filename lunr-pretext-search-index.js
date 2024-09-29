@@ -28,9 +28,9 @@ var ptx_lunr_docs = [
   "body": " Section two  Text of section 2.  "
 },
 {
-  "id": "backmatter-3",
+  "id": "backmatter-2",
   "level": "1",
-  "url": "backmatter-3.html",
+  "url": "backmatter-2.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",

@@ -15,8 +15,8 @@ var ptx_lunr_docs = [
   "url": "sec-one-name.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Section TitleSection 2",
-  "body": " Section Title  Text of section one.  Section 2  Text of section 2.  "
+  "title": "Section Title",
+  "body": " Section Title  Text of section one.  "
 },
 {
   "id": "sec2-sec-name",

@@ -10,18 +10,18 @@ var ptx_lunr_docs = [
   "body": "  under construction. go here for now.   copyright  "
 },
 {
-  "id": "sec-one-name",
+  "id": "ch1-1",
   "level": "1",
-  "url": "sec-one-name.html",
+  "url": "ch1-1.html",
   "type": "Section",
   "number": "1.1",
   "title": "Section Title",
-  "body": " Section Title  Text of section one.  "
+  "body": " Section Title  here's some latex:     "
 },
 {
-  "id": "sec2-sec-name",
+  "id": "ch2-1",
   "level": "1",
-  "url": "sec2-sec-name.html",
+  "url": "ch2-1.html",
   "type": "Section",
   "number": "2.1",
   "title": "Section two",

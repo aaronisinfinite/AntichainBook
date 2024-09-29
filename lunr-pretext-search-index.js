@@ -28,13 +28,13 @@ var ptx_lunr_docs = [
   "body": " Section two  Text of section 2.  "
 },
 {
-  "id": "backmatter-2",
+  "id": "backmatter-3",
   "level": "1",
-  "url": "backmatter-2.html",
+  "url": "backmatter-3.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " this is backmatter.  This book was authored in PreTeXt .  "
+  "body": " this is colophon.  This book was authored in PreTeXt .  "
 }
 ]
 

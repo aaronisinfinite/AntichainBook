@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>aphilly's first pretext</title>
-    <subtitle>ap gettin' started</subtitle>
+    <title>antichains</title>
+    <subtitle>flat, squashed order</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

@@ -23,15 +23,6 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec2-sec-name.html",
   "type": "Section",
-  "number": "1.2",
-  "title": "Section two",
-  "body": " Section two  Text of section 2.  "
-},
-{
-  "id": "sec2-sec-name",
-  "level": "1",
-  "url": "sec2-sec-name.html",
-  "type": "Section",
   "number": "2.1",
   "title": "Section two",
   "body": " Section two  Text of section 2.  "

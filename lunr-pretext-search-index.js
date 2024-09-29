@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " This book was authored in PreTeXt .  "
+  "body": " this is backmatter.  This book was authored in PreTeXt .  "
 }
 ]
 

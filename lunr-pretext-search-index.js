@@ -10,13 +10,13 @@ var ptx_lunr_docs = [
   "body": "  My Website   copyright  "
 },
 {
-  "id": "sec-section-name",
+  "id": "sec-one-name",
   "level": "1",
-  "url": "sec-section-name.html",
+  "url": "sec-one-name.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Section Title",
-  "body": " Section Title  Text of section.  "
+  "title": "Section TitleSection 2",
+  "body": " Section Title  Text of section one.  Section 2  Text of section 2.  "
 },
 {
   "id": "backmatter-2",

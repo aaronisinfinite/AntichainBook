@@ -5,6 +5,6 @@
 
   <p> here's some latex: </p>
 
-  <p> <me> \sum_1^\inf \frac{1}{n^2} = \frac{\pi^2}{6} </me> </p>
+  <p> <me> \sum_1^{\inf} \frac{1}{n^2} = \frac{\pi^2}{6} </me> </p>
 
   </section>

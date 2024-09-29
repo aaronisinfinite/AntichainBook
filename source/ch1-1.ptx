@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="ch1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>ch1 sec1</title>
 
   <p> here's some latex: </p>
 
-  <p> <m> \sum_1^\inf \frac{1}{n^2} = \frac{\pi^2}{6} </m> </p>
+  <p> <me> \sum_1^\inf \frac{1}{n^2} = \frac{\pi^2}{6} </me> </p>
 
   </section>

@@ -21,8 +21,9 @@
 
   <sage language="octave">
     <input>
-      % calculate the (signed) volume of the parallelopiped formed by u,v, and w
-      
+      % calculate the (signed) volume of the parallelopiped 
+      % formed by u,v, and w
+
       % first with the determinant of A,
       d = det(A)
 
@@ -30,7 +31,7 @@
       b = sum(cross(u,v).*w)
 
       % verify these are equal
-      d - b
+      d/b
     </input>
     <output>
     </output>
@@ -41,7 +42,6 @@
       
     </input>
     <output>
-      what?
     </output>
   </sage>
 

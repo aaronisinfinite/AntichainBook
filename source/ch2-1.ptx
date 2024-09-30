@@ -25,12 +25,13 @@
     <output>
     </output>
   </sage>
-  
+
   <sage language="octave">
     <input>
-      a^2
+      
     </input>
     <output>
+      what?
     </output>
   </sage>
 

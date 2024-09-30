@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="ch1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>ch1 sec1</title>
+  <title>Exercises</title>
 
-  <p> here's some latex: </p>
-
-  <p> <me> \sum_1^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} </me> </p>
+  <!-- <p> </p>-->
 
   <!-- <exercise-inline statement="yes" hint="yes" answer="no" solution="no" /> -->
   <exercise>
-    <title>Exercise Title</title>
+    <title>Cute result</title>
     
     <statement>
-      <p>        
-      The exercise is stated here.
+      <p>Prove that
+        <me> \sum_1^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} </me>
       </p>
     </statement>
     <hint>

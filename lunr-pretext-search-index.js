@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "ch1 sec1",
-  "body": " ch1 sec1  here's some latex:       "
+  "body": " ch1 sec1  here's some latex:      Exercise Title  The exercise is stated here.   A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
 },
 {
   "id": "ch1-1-4",
@@ -24,8 +24,8 @@ var ptx_lunr_docs = [
   "url": "ch1-1.html#ch1-1-4",
   "type": "Checkpoint",
   "number": "1.1.1",
-  "title": "",
-  "body": ""
+  "title": "Exercise Title.",
+  "body": "Exercise Title  The exercise is stated here.   A hint is given here.   A short answer is given here.   A detailed solution is given here.  "
 },
 {
   "id": "ch2-1",

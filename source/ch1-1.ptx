@@ -7,4 +7,7 @@
 
   <p> <me> \sum_1^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} </me> </p>
 
+  <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
+
+  </exercise>
   </section>

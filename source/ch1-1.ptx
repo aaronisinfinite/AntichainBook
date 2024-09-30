@@ -5,7 +5,7 @@
 
   <!-- <p> </p>-->
 
-  <!-- <exercise-inline statement="yes" hint="yes" answer="no" solution="no" /> -->
+  <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
   <exercise>
     <title>Cute result</title>
     

@@ -9,6 +9,27 @@
 
   <!-- <exercise-inline statement="yes" hint="yes" answer="no" solution="no" /> -->
   <exercise>
-    here's an exercise
+    <title>Exercise Title</title>
+    
+    <statement>
+      <p>        
+      The exercise is stated here.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A hint is given here.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        A short answer is given here.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        A detailed solution is given here.
+      </p>
+    </solution>
   </exercise>
   </section>

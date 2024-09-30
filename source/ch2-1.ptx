@@ -7,11 +7,26 @@
 
   <sage language="octave">
     <input>
-      a = det([1 2;3 4])
+      u = [1 2 0]';
+      v = [2 0 3]';
+      w = [0 3 4]';
+      A = [u v w];
+      d = det(A)
     </input>
     <output>
     </output>
   </sage>
+
+  <sage language="octave">
+    <input>
+      b = sum(w.*cross(u,v));
+      d - b
+    </input>
+    <output>
+    </output>
+  </sage>
+  </section>
+
   <sage language="octave">
     <input>
       a^2

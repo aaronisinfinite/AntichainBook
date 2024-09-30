@@ -161,13 +161,23 @@ sagecell.makeSagecell({
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">matlab/octave</span>
 </h2>
 <div class="para" id="ch2-1-2">here are sage cells using matlab/octave syntax. they are as if in a notebook</div>
-<div id="ch2-1-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">u = [1 2 0]';
+<div id="ch2-1-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% define three vectors
+u = [1 2 0]';
 v = [2 0 3]';
 w = [0 3 4]';
+
+% construct matrix whose columns are u,v, and w
 A = [u v w];
-d = det(A)
 </script></div>
-<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">b = sum(w.*cross(u,v));
+<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% calculate the (signed) volume of the parallelopiped formed by u,v, and w
+
+% first with the determinant of A,
+d = det(A)
+
+% next with the scalar triple product.
+b = sum(cross(u,v).*w)
+
+% verify these are equal
 d - b
 </script></div>
 <div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">

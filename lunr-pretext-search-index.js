@@ -16,7 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "ch1 sec1",
-  "body": " ch1 sec1  here's some latex:     "
+  "body": " ch1 sec1  here's some latex:       "
+},
+{
+  "id": "ch1-1-4",
+  "level": "2",
+  "url": "ch1-1.html#ch1-1-4",
+  "type": "Checkpoint",
+  "number": "1.1.1",
+  "title": "",
+  "body": ""
 },
 {
   "id": "ch2-1",

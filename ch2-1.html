@@ -169,7 +169,8 @@ w = [0 3 4]';
 % construct matrix whose columns are u,v, and w
 A = [u v w];
 </script></div>
-<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% calculate the (signed) volume of the parallelopiped formed by u,v, and w
+<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% calculate the (signed) volume of the parallelopiped 
+% formed by u,v, and w
 
 % first with the determinant of A,
 d = det(A)
@@ -178,7 +179,7 @@ d = det(A)
 b = sum(cross(u,v).*w)
 
 % verify these are equal
-d - b
+d/b
 </script></div>
 <div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
 </script></div></section></div>

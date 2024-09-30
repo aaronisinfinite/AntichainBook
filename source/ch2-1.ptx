@@ -7,11 +7,13 @@
 
   <sage language="octave">
     <input>
+      % define three vectors
       u = [1 2 0]';
       v = [2 0 3]';
       w = [0 3 4]';
+
+      % construct matrix whose columns are u,v, and w
       A = [u v w];
-      d = det(A)
     </input>
     <output>
     </output>
@@ -19,7 +21,15 @@
 
   <sage language="octave">
     <input>
-      b = sum(w.*cross(u,v));
+      % calculate the (signed) volume of the parallelopiped formed by u,v, and w
+      
+      % first with the determinant of A,
+      d = det(A)
+
+      % next with the scalar triple product.
+      b = sum(cross(u,v).*w)
+
+      % verify these are equal
       d - b
     </input>
     <output>

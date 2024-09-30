@@ -19,9 +19,9 @@ var ptx_lunr_docs = [
   "body": " Exercises    Cute result  Prove that    A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
 },
 {
-  "id": "ch1-1-2",
+  "id": "ch1-1-3",
   "level": "2",
-  "url": "ch1-1.html#ch1-1-2",
+  "url": "ch1-1.html#ch1-1-3",
   "type": "Checkpoint",
   "number": "1.1.1",
   "title": "Cute result.",

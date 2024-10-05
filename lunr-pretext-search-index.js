@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Exercises",
-  "body": " Exercises   examples can have support hints, answers, and solutions.   Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.    exercises seem to only support hints.  whoa  Derive the principal of conservation of energy.   A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
+  "body": " Exercises   examples can have hints, answers, and solutions.   Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.    exercises seem to only support hints. don't know yet why the exercise is automatically labeled checkpoint.  whoa  Derive the principal of conservation of energy.   A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
 },
 {
   "id": "ch1-1-4",

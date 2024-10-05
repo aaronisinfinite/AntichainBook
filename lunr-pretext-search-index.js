@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Exercises",
-  "body": " Exercises     Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.    "
+  "body": " Exercises    Cute result  examples can have support hints, answers, and solutions.   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.    whoa exercises seem to only support hints.  Derive the principal of conservation of energy.   A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
 },
 {
   "id": "ch1-1-3",
@@ -25,7 +25,16 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.1",
   "title": "Cute result.",
-  "body": " Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.   "
+  "body": " Cute result  examples can have support hints, answers, and solutions.   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.   "
+},
+{
+  "id": "ch1-1-4",
+  "level": "2",
+  "url": "ch1-1.html#ch1-1-4",
+  "type": "Checkpoint",
+  "number": "1.1.2",
+  "title": "whoa.",
+  "body": "whoa exercises seem to only support hints.  Derive the principal of conservation of energy.   A hint is given here.   A short answer is given here.   A detailed solution is given here.  "
 },
 {
   "id": "ch2-1",

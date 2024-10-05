@@ -16,16 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Exercises",
-  "body": " Exercises    Cute result  Prove that    A hint is given here.   A short answer is given here.   A detailed solution is given here.   "
+  "body": " Exercises     Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.    "
 },
 {
   "id": "ch1-1-3",
   "level": "2",
   "url": "ch1-1.html#ch1-1-3",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "1.1.1",
   "title": "Cute result.",
-  "body": "Cute result  Prove that    A hint is given here.   A short answer is given here.   A detailed solution is given here.  "
+  "body": " Cute result   Prove that     A hint is given here.    A short answer is given here.    A detailed solution is given here.   "
 },
 {
   "id": "ch2-1",

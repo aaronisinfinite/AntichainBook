@@ -4,7 +4,7 @@
   <title>Exercises</title>
 
   <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes"/>
-    <p> examples can have support hints, answers, and solutions. </p>
+    <p> examples can have hints, answers, and solutions. </p>
   <example>
     <title>Cute result</title>
     
@@ -30,7 +30,7 @@
     </solution>
   </example>
 
-    <p> exercises seem to only support hints. </p>
+    <p> exercises seem to only support hints. don't know yet why the exercise is automatically labeled checkpoint.</p>
   <exercise>
     <title>whoa</title>
 

@@ -3,11 +3,10 @@
 <section xml:id="ch1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercises</title>
 
-  <!-- <p> </p>-->
-
   <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes"/>
   <example>
     <title>Cute result</title>
+    <p> examples can have support hints, answers, and solutions. </p>
     
     <statement>
       <p>Prove that
@@ -30,4 +29,32 @@
       </p>
     </solution>
   </example>
+
+  <exercise>
+    <title>whoa</title>
+    <p> exercises seem to only support hints. </p>
+
+    <statement>
+      <p> Derive the principal of conservation of energy. 
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A hint is given here.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        A short answer is given here.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        A detailed solution is given here.
+      </p>
+    </solution>
+  </exercise>
+
+
+
   </section>

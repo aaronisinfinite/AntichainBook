@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "  under construction. go here for now.   copyright  "
+  "body": "  under construction.   copyright  "
 },
 {
   "id": "ch1-1",

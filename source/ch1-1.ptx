@@ -4,9 +4,9 @@
   <title>Exercises</title>
 
   <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <p> examples can have support hints, answers, and solutions. </p>
   <example>
     <title>Cute result</title>
-    <p> examples can have support hints, answers, and solutions. </p>
     
     <statement>
       <p>Prove that
@@ -30,9 +30,9 @@
     </solution>
   </example>
 
+    <p> exercises seem to only support hints. </p>
   <exercise>
     <title>whoa</title>
-    <p> exercises seem to only support hints. </p>
 
     <statement>
       <p> Derive the principal of conservation of energy. 

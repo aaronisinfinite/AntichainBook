@@ -6,7 +6,7 @@
   <!-- <p> </p>-->
 
   <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes"/>
-  <exercise>
+  <example>
     <title>Cute result</title>
     
     <statement>
@@ -20,14 +20,14 @@
       </p>
     </hint>
     <answer>
-      <!--<p> -->
+      <p>
         A short answer is given here.
-      <!--</p> -->
+      </p>
     </answer>
     <solution>
       <p>
         A detailed solution is given here.
       </p>
     </solution>
-  </exercise>
+  </example>
   </section>

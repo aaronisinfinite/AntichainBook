@@ -259,7 +259,49 @@ print("It occurs " + str(numOccurences) + " time(s)")
 print("Locations of min:")
 print(minLocations)
 </script></div>
-<div id="ch2-2-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">
+<div id="ch2-2-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">k = 4
+
+d = 3
+
+
+import math
+
+import matplotlib.pyplot as plt
+
+import numpy as np
+
+
+mylist = [0]
+
+
+def myfunction(k,d):
+
+  if d == 2:
+
+    for i in range(k,-1,-1):
+
+      for j in range(i-1,-2,-1):
+
+        mylist.append(j)
+
+  else:
+
+    for s in range(k,-1,-1):
+
+      myfunction(s,d-1)
+
+
+myfunction(k,d)
+
+arr = np.array(mylist)
+
+cumulative_sum = np.cumsum(arr)
+
+plt.plot(cumulative_sum)
+
+plt.show()
+
+print('done')
 </script></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch2-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

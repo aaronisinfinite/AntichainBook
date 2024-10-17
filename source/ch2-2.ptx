@@ -121,7 +121,7 @@ plt.show()
             
             index = 0
             for i in ypoints:
-                if i &lt minVal:
+                if i &lt; minVal:
                     minVal = i
                     minLocations = []
                     minLocations.append(index)

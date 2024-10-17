@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>antichains</title>
+<title>python</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -149,7 +149,7 @@ sagecell.makeSagecell({
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch2-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -163,23 +163,118 @@ sagecell.makeSagecell({
 <div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Chapter one</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch1-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">sage cells</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">matlab/octave</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch2-2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">python</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch2-2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">python</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="antichains"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></li>
-<li><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Chapter one</span></a></li>
-<li><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">sage cells</span></a></li>
-<li><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></li>
-</ul></nav></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="ch2-2"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">python</span>
+</h2>
+<div class="para" id="ch2-2-2">here are python cells generating volume graph</div>
+<div id="ch2-2-3" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># IMPORTS AND VARIABLES
+
+# imports
+import math
+import matplotlib.pyplot as plt
+
+# parameters
+n = 9
+k = 6
+d = n - k
+</script></div>
+<div id="ch2-2-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">        # MAKES t'_k ARRAY (named tkArray)
+
+# sets up reference list
+rlist = []
+for i in range(k):
+    rlist.append(k-i-1)
+rlist.append(-1)
+
+# makes full d-dimensional array
+templist1 = rlist
+templist2 = rlist
+for i in range(d-1):
+    for j in range(k):    
+        numberremoved = math.comb(k+i-j, i)
+        templist1 = templist1[numberremoved:]
+        for m in range(len(templist1)):
+            templist2.append(templist1[m])
+    templist1 = templist2
+tkArray = templist1
+
+print("t'_k array is:")
+print(tkArray)
+</script></div>
+<div id="ch2-2-5" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># MAKES W_k ARRAY (named WkArray)
+
+WkArray = []
+for term in tkArray:
+    term = (k-1)*term - 1
+    WkArray.append(term)
+
+print("W_k array is:")
+print(WkArray)
+</script></div>
+<div id="ch2-2-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">            # MAKES W_k ARRAY (named WkArray)
+
+            # FINDS IV (initial value)
+
+iv = math.comb(n,k-1)*(k-1)
+print("Initial value is: " + str(iv))
+</script></div>
+<div id="ch2-2-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDS IV (initial value)
+
+iv = math.comb(n,k-1)*(k-1)
+print("Initial value is: " + str(iv))
+</script></div>
+<div id="ch2-2-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">            #PREPARING AND PLOTTING GRAPH
+
+xpoints = [0]
+ypoints = [iv]
+
+# preparing graph
+xcounter = 0
+ycounter = iv
+for term in WkArray:
+    xcounter += 1
+    ycounter -= term
+    xpoints.append(xcounter)
+    ypoints.append(ycounter)
+
+# plotting graph
+plt.plot(xpoints,ypoints)
+plt.show()
+</script></div>
+<div id="ch2-2-9" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDING MIN VALUES
+
+minVal = iv
+minLocations = []
+
+index = 0
+for i in ypoints:
+    if i < minVal:
+        minVal = i
+        minLocations = []
+        minLocations.append(index)
+    elif i == minVal:
+        minLocations.append(index)
+    index += 1
+numOccurences = len(minLocations)
+
+print("Minimum value is: " + str(minVal))
+print("It occurs " + str(numOccurences) + " time(s)")
+print("Locations of min:")
+print(minLocations)
+</script></div>
+<div id="ch2-2-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">
+</script></div></section></div>
 <div class="ptx-content-footer">
-<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch2-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

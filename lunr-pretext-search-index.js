@@ -46,6 +46,15 @@ var ptx_lunr_docs = [
   "body": " matlab\/octave  here are sage cells using matlab\/octave syntax. they are as if in a notebook     "
 },
 {
+  "id": "ch2-2",
+  "level": "1",
+  "url": "ch2-2.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "python",
+  "body": " python  here are python cells generating volume graph          "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",

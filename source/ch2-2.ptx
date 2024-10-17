@@ -24,7 +24,7 @@
 
     </sage>
   
-    <sage language="octave">
+    <sage language="python">
       <input>
         # MAKES t'_k ARRAY (named tkArray)
 

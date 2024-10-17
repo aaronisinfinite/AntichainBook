@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>matlab/octave</title>
+
+  <p> here are sage cells using matlab/octave syntax. they are as if in a notebook</p>
+
+  <?xml version="1.0" encoding="UTF-8"?>
+
+  <section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>matlab/octave</title>
+  
+    <p> here are sage cells using matlab/octave syntax. they are as if in a notebook</p>
+  
+    <sage language="octave">
+      <input>
+        % define three vectors
+        u = [1 2 0]';
+        v = [2 0 3]';
+        w = [0 3 4]';
+  
+        % construct matrix whose columns are u,v, and w
+        A = [u v w];
+      </input>
+      <output>
+      </output>
+    </sage>
+  
+    <sage language="python">
+      <input>
+        # IMPORTS AND VARIABLES
+
+        # imports
+        import math
+        import matplotlib.pyplot as plt
+        
+        # parameters
+        n = 9
+        k = 6
+        d = n - k
+      </input>
+      <output>
+      </output>
+    </sage>
+  
+    <sage language="octave">
+      <input>
+        # MAKES t'_k ARRAY (named tkArray)
+
+# sets up reference list
+rlist = []
+for i in range(k):
+    rlist.append(k-i-1)
+rlist.append(-1)
+
+# makes full d-dimensional array
+templist1 = rlist
+templist2 = rlist
+for i in range(d-1):
+    for j in range(k):    
+        numberremoved = math.comb(k+i-j, i)
+        templist1 = templist1[numberremoved:]
+        for m in range(len(templist1)):
+            templist2.append(templist1[m])
+    templist1 = templist2
+tkArray = templist1
+
+print("t'_k array is:")
+print(tkArray)
+      </input>
+      <output>
+      </output>
+    </sage>
+    <sage language="python">
+        <input>
+            # MAKES W_k ARRAY (named WkArray)
+
+            WkArray = []
+            for term in tkArray:
+                term = (k-1)*term - 1
+                WkArray.append(term)
+            
+            print("W_k array is:")
+            print(WkArray)
+        </input>
+        <output>
+        </output>
+      </sage>
+      <sage language="python">
+        <input>
+            # MAKES W_k ARRAY (named WkArray)
+
+            # FINDS IV (initial value)
+
+iv = math.comb(n,k-1)*(k-1)
+print("Initial value is: " + str(iv))
+        </input>
+        <output>
+        </output>
+      </sage>
+      <sage language="python">
+        <input>
+            # FINDS IV (initial value)
+
+            iv = math.comb(n,k-1)*(k-1)
+            print("Initial value is: " + str(iv)) 
+        </input>
+        <output>
+        </output>
+      </sage>
+      <sage language="python">
+        <input>
+            PREPARING AND PLOTTING GRAPH
+
+xpoints = [0]
+ypoints = [iv]
+
+# preparing graph
+xcounter = 0
+ycounter = iv
+for term in WkArray:
+    xcounter += 1
+    ycounter -= term
+    xpoints.append(xcounter)
+    ypoints.append(ycounter)
+
+# plotting graph
+plt.plot(xpoints,ypoints)
+plt.show()
+        </input>
+        <output>
+        </output>
+      </sage>
+      <sage language="python">
+        <input>
+            # FINDING MIN VALUES
+
+            minVal = iv
+            minLocations = []
+            
+            index = 0
+            for i in ypoints:
+                if i < minVal:
+                    minVal = i
+                    minLocations = []
+                    minLocations.append(index)
+                elif i == minVal:
+                    minLocations.append(index)
+                index += 1
+            numOccurences = len(minLocations)
+            
+            print("Minimum value is: " + str(minVal))
+            print("It occurs " + str(numOccurences) + " time(s)")
+            print("Locations of min:")
+            print(minLocations) 
+        </input>
+        <output>
+        </output>
+      </sage>
+      <sage language="python">
+        <input>
+            
+        </input>
+        <output>
+        </output>
+      </sage>
+    </section>
+  
+  </section>

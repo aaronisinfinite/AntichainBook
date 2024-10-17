@@ -140,51 +140,32 @@ plt.show()
       </sage>
       <sage language="python">
         <input>
-          k = 4
-
-          d = 3
-          
-          
           import math
-          
           import matplotlib.pyplot as plt
-          
           import numpy as np
-          
+
+          k = 4
+          d = 3
           
           mylist = [0]
           
-          
           def myfunction(k,d):
-          
             if d == 2:
-          
-              for i in range(k,-1,-1):
-          
+              for i in range(k,-1,-1)
                 for j in range(i-1,-2,-1):
-          
                   mylist.append(j)
-          
             else:
-          
               for s in range(k,-1,-1):
-          
                 myfunction(s,d-1)
-          
-          
+
           myfunction(k,d)
-          
           arr = np.array(mylist)
-          
           cumulative_sum = np.cumsum(arr)
-          
+
           plt.plot(cumulative_sum)
-          
           plt.show()
-          
+
           print('done')
-          
-          
         </input>
         <output>
         </output>

@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="ch2-2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>matlab/octave</title>
-
-  <p> here are sage cells using matlab/octave syntax. they are as if in a notebook</p>
-
-  <?xml version="1.0" encoding="UTF-8"?>
-
-  <section xml:id="ch2-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>matlab/octave</title>
   
-    <p> here are sage cells using matlab/octave syntax. they are as if in a notebook</p>
+    <p> here are python cells generating volume graph /p>
   
-    <sage language="octave">
-      <input>
-        % define three vectors
-        u = [1 2 0]';
-        v = [2 0 3]';
-        w = [0 3 4]';
-  
-        % construct matrix whose columns are u,v, and w
-        A = [u v w];
-      </input>
-      <output>
-      </output>
-    </sage>
-  
+   
     <sage language="python">
       <input>
         # IMPORTS AND VARIABLES
@@ -41,6 +21,7 @@
       </input>
       <output>
       </output>
+
     </sage>
   
     <sage language="octave">
@@ -110,7 +91,7 @@ print("Initial value is: " + str(iv))
       </sage>
       <sage language="python">
         <input>
-            PREPARING AND PLOTTING GRAPH
+            #PREPARING AND PLOTTING GRAPH
 
 xpoints = [0]
 ypoints = [iv]
@@ -140,7 +121,7 @@ plt.show()
             
             index = 0
             for i in ypoints:
-                if i < minVal:
+                if i &lt minVal:
                     minVal = i
                     minLocations = []
                     minLocations.append(index)

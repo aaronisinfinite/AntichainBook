@@ -106,6 +106,7 @@ for term in WkArray:
     ypoints.append(ycounter)
 
 # plotting graph
+clf()
 plt.plot(xpoints,ypoints)
 plt.show()
         </input>

@@ -1,8 +1,7 @@
-# PreTeXt Codespace
+# Antichain book readme 
 
-finally set this up
+this is the antichain book
 
-## Instructions
-none.
-
-nothing interesting yet
+## notice
+need to host the book.
+currently have to build from within codespace

@@ -6,7 +6,7 @@
     <p> here are python cells generating volume graph </p>
   
    
-    <sage language="python">
+    <sage language="python"> <!-- IMPORTS AND VARIABLES -->
       <input>
         # IMPORTS AND VARIABLES
 
@@ -24,7 +24,7 @@
 
     </sage>
   
-    <sage language="python">
+    <sage language="python"> <!-- MAKES t'_k ARRAY -->
       <input>
         # MAKES t'_k ARRAY (named tkArray)
 
@@ -52,7 +52,8 @@ print(tkArray)
       <output>
       </output>
     </sage>
-    <sage language="python">
+
+    <sage language="python"> <!-- MAKES W_k ARRAY -->
         <input>
             # MAKES W_k ARRAY (named WkArray)
 
@@ -66,54 +67,44 @@ print(tkArray)
         </input>
         <output>
         </output>
-      </sage>
-      <sage language="python">
-        <input>
-            # MAKES W_k ARRAY (named WkArray)
+    </sage>
 
-            # FINDS IV (initial value)
-
-iv = math.comb(n,k-1)*(k-1)
-print("Initial value is: " + str(iv))
-        </input>
-        <output>
-        </output>
-      </sage>
-      <sage language="python">
+    <sage language="python"> <!-- FINDS IV -->
         <input>
             # FINDS IV (initial value)
 
             iv = math.comb(n,k-1)*(k-1)
-            print("Initial value is: " + str(iv)) 
+            print("Initial value is: " + str(iv))
         </input>
         <output>
         </output>
-      </sage>
-      <sage language="python">
+    </sage>
+
+    <sage language="python"> <!-- PREPARING AND PLOTTING GRAPH -->
         <input>
             #PREPARING AND PLOTTING GRAPH
 
-xpoints = [0]
-ypoints = [iv]
+            xpoints = [0]
+            ypoints = [iv]
 
-# preparing graph
-xcounter = 0
-ycounter = iv
-for term in WkArray:
-    xcounter += 1
-    ycounter -= term
-    xpoints.append(xcounter)
-    ypoints.append(ycounter)
+            # preparing graph
+            xcounter = 0
+            ycounter = iv
+            for term in WkArray:
+                xcounter += 1
+                ycounter -= term
+                xpoints.append(xcounter)
+                ypoints.append(ycounter)
 
-# plotting graph
-clf()
-plt.plot(xpoints,ypoints)
-plt.show()
+            # plotting graph
+            plt.plot(xpoints,ypoints)
+            plt.show()
         </input>
         <output>
         </output>
-      </sage>
-      <sage language="python">
+    </sage>
+
+    <sage language="python"> <!-- FINDING MIN VALUES -->
         <input>
             # FINDING MIN VALUES
 
@@ -138,9 +129,10 @@ plt.show()
         </input>
         <output>
         </output>
-      </sage>
-      <sage language="python">
-        <input>
+    </sage>
+
+    <sage language="python"> <!-- blank cell -->
+      <input>
           import math
           import matplotlib.pyplot as plt
           import numpy as np
@@ -167,12 +159,9 @@ plt.show()
           plt.show()
 
           print('done')
-        </input>
-        <output>
-        </output>
-      </sage>
+      </input>
+      <output>
+      </output>
+    </sage>
   
-
-
-
   </section>

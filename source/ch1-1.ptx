@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="ch1-1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Exercises</title>
+
+  <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <p> examples can have hints, answers, and solutions. </p>
+  <example>
+    <title>Cute result</title>
+    
+    <statement>
+      <p>Prove that
+        <me> \sum_1^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6} </me>
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A hint is given here.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        A short answer is given here.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        A detailed solution is given here.
+      </p>
+    </solution>
+  </example>
+
+    <p> exercises seem to only support hints. don't know yet why the exercise is automatically labeled checkpoint.</p>
+  <exercise>
+    <title>whoa</title>
+
+    <statement>
+      <p> Derive the principal of conservation of energy. 
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A hint is given here.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        A short answer is given here.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        A detailed solution is given here.
+      </p>
+    </solution>
+  </exercise>
+
+
+
+  </section>

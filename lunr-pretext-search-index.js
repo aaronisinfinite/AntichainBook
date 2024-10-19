@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "python",
-  "body": " python  here are python cells generating volume graph          "
+  "body": " python  here are python cells generating volume graph         "
 },
 {
   "id": "backmatter-2",

@@ -208,19 +208,12 @@ for term in tkArray:
 print("W_k array is:")
 print(WkArray)
 </script></div>
-<div id="ch2-2-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage">            # MAKES W_k ARRAY (named WkArray)
-
-            # FINDS IV (initial value)
+<div id="ch2-2-6" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDS IV (initial value)
 
 iv = math.comb(n,k-1)*(k-1)
 print("Initial value is: " + str(iv))
 </script></div>
-<div id="ch2-2-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDS IV (initial value)
-
-iv = math.comb(n,k-1)*(k-1)
-print("Initial value is: " + str(iv))
-</script></div>
-<div id="ch2-2-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage">            #PREPARING AND PLOTTING GRAPH
+<div id="ch2-2-7" class="ptx-sagecell sagecell-python"><script type="text/x-sage">#PREPARING AND PLOTTING GRAPH
 
 xpoints = [0]
 ypoints = [iv]
@@ -235,11 +228,10 @@ for term in WkArray:
     ypoints.append(ycounter)
 
 # plotting graph
-clf()
 plt.plot(xpoints,ypoints)
 plt.show()
 </script></div>
-<div id="ch2-2-9" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDING MIN VALUES
+<div id="ch2-2-8" class="ptx-sagecell sagecell-python"><script type="text/x-sage"># FINDING MIN VALUES
 
 minVal = iv
 minLocations = []
@@ -260,7 +252,7 @@ print("It occurs " + str(numOccurences) + " time(s)")
 print("Locations of min:")
 print(minLocations)
 </script></div>
-<div id="ch2-2-10" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import math
+<div id="ch2-2-9" class="ptx-sagecell sagecell-python"><script type="text/x-sage">import math
 import matplotlib.pyplot as plt
 import numpy as np
 

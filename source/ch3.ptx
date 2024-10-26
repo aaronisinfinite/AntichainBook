@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch3" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter one</title>
+  <title>Weighted Functions</title>
 
   <introduction>
     <p> include sections about different weighted functions (size, volume, blym) </p>
@@ -10,5 +10,8 @@
 
   <!-- include sections -->
   <xi:include href="ch3-1.ptx" />
+  <xi:include href="ch3-2.ptx" />
+  <xi:include href="ch3-3.ptx" />
+  <xi:include href="ch3-4.ptx" />
 
 </chapter>

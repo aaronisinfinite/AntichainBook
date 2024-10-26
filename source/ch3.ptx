@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Chapter one</title>
+
+  <introduction>
+    <p> include sections about different weighted functions (size, volume, blym) </p>
+    <p> add a section about generalized weighted functions when we know more </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="ch3-1.ptx" />
+
+</chapter>

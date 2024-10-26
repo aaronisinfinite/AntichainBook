@@ -344,11 +344,7 @@ op.numk1 = numk1;
 
 end
 </script></div>
-<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">n = 12;
-k = 5;
-A = antichain_all(n,k)
-</script></div>
-<div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function blym_comp(n,k)
+<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function blym_comp(n,k)
 % compare blym to size and volume
 
 acs = antichain_size(n,k);
@@ -378,7 +374,7 @@ title(strcat('blym, normalized volume,size for n = ',num2str(n),', k = ',num2str
 
 end
 </script></div>
-<div id="ch2-1-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function tiled_blym(n,K,varargin)
+<div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function tiled_blym(n,K,varargin)
 % compare blym graphs for fixed n, varied k
 % example: tiled_blym(9,3:9)
 %    equivalently: tiled_blym(9,[3,4,5,6,7,8])
@@ -419,7 +415,7 @@ p = p0 + p1;
 % plot
 subplot(numrows,2,plot_ind);
 str = strcat('n = ',[' ',num2str(n)],', k = ',[' ',num2str(k)]);
-plot(p,'w')
+plot(p)
 xlim([0, nCk0])
 text(ceil(nCk0/4), .94, str)
 
@@ -434,11 +430,23 @@ end
 
 end
 </script></div>
-<div id="ch2-1-7" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+<div id="ch2-1-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">n = 12;
+k = 5;
+A = antichain_all(n,k);
 </script></div>
-<div id="ch2-1-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+<div id="ch2-1-7" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">tiled_blym(9,3:8)
+</script></div>
+<div id="ch2-1-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">blym_comp(12,9)
 </script></div>
 <div id="ch2-1-9" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-10" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-11" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-12" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-13" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
 </script></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch2-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

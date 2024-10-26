@@ -164,27 +164,55 @@ sagecell.makeSagecell({
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">matlab/octave</span>
 </h2>
 <div class="para" id="ch2-1-2">here are sage cells using matlab/octave syntax. they are as if in a notebook</div>
-<div id="ch2-1-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% define three vectors
-u = [1 2 0]';
-v = [2 0 3]';
-w = [0 3 4]';
+<div id="ch2-1-3" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">function [op,size,marg,vol,blym,numk,numk1] = antichain_all(n,k)
+% return "all" objects of interest
+% marginals, size, vol, blym, ...
 
-% construct matrix whose columns are u,v, and w
-A = [u v w];
+acs = antichain_size(n,k);
+size = acs.size_lin;
+marg = acs.marg_lin;
+acv = antichain_volume(n,k);
+vol = acv.vol;
+
+nCk0 = nchoosek(n,k);
+nCk1 = nchoosek(n,k-1);
+numk = 0:nCk0;
+numk1 = size - numk;
+
+p0 = numk/nCk0;
+p1 = numk1/nCk1;
+blym = p0 + p1;
+
+% clf
+
+% hold on
+% plot(p0+p1,'yo')
+% plot(vols/max(vols),'rx')
+% plot(sizes/max(sizes),'m+')
+
+% % norm(sym(vols)/max(sym(vols))-sym(p0)-sym(p1))
+% legend({'blym','vol (norm)','size (norm)'},'Location','best')
+% title(strcat('blym, normalized volume,size for n = ',num2str(n),', k = ',num2str(k)));
+
+%% output
+op.size = size;
+op.marg = marg;
+op.vol = vol;
+op.blym = blym;
+op.numk = numk;
+op.numk1 = numk1;
+
+end
 </script></div>
-<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">% calculate the (signed) volume of the parallelopiped 
-% formed by u,v, and w
-
-% first with the determinant of A,
-d = det(A)
-
-% next with the scalar triple product.
-b = sum(cross(u,v).*w)
-
-% verify these are equal
-d/b
+<div id="ch2-1-4" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">n = 12;
+k = 5;
+[op,size,marg,vol,blym,numk,numk1] = antichain_all(n,k);
 </script></div>
 <div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-7" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
 </script></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch2-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

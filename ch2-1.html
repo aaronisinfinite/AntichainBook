@@ -348,11 +348,97 @@ end
 k = 5;
 A = antichain_all(n,k)
 </script></div>
-<div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+<div id="ch2-1-5" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function blym_comp(n,k)
+% compare blym to size and volume
+
+acs = antichain_size(n,k);
+sizes = acs.size_lin;
+acv = antichain_volume(n,k);
+vols = acv.vol;
+
+nCk0 = nchoosek(n,k);
+nCk1 = nchoosek(n,k-1);
+numk = 0:nCk0;
+numk1 = sizes - numk;
+
+p0 = numk/nCk0;
+p1 = numk1/nCk1;
+
+clf
+
+hold on
+plot(p0+p1,'yo')
+plot(vols/max(vols),'rx')
+plot(sizes/max(sizes),'m+')
+
+% norm(sym(vols)/max(sym(vols))-sym(p0)-sym(p1))
+legend({'blym','vol (norm)','size (norm)'},'Location','best')
+title(strcat('blym, normalized volume,size for n = ',num2str(n),', k = ',num2str(k)));
+
+
+end
 </script></div>
-<div id="ch2-1-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+<div id="ch2-1-6" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">      function tiled_blym(n,K,varargin)
+% compare blym graphs for fixed n, varied k
+% example: tiled_blym(9,3:9)
+%    equivalently: tiled_blym(9,[3,4,5,6,7,8])
+% example: tiled_blym(10,[3,4,6,9])
+
+numplots = length(K);
+numrows = ceil(numplots/2);
+plot_ind = 1;
+
+figure_number = 1;
+x      = 0;   % Screen position
+y      = 0;   % Screen position
+width  = 450; % Width of figure
+height = 150*numrows; % Height of figure (by default in pixels)
+
+% figure('Position', [x y width height]);
+figure
+title('blym graphs for (n,k) = ...')
+%loop over k-values
+for k = K %
+
+nCk0 = nchoosek(n,k);
+nCk1 = nchoosek(n,k-1);
+
+% get sizes
+acs = antichain_size(n,k);
+sizes = acs.size_lin;
+
+% numbers of k- and (k-1)-sets in antichains
+numk = 0:nCk0;
+numk1 = sizes - numk;
+
+% portions of k- and (k-1)-sets in antichains
+p0 = numk/nCk0;
+p1 = numk1/nCk1;
+p = p0 + p1;
+
+% plot
+subplot(numrows,2,plot_ind);
+str = strcat('n = ',[' ',num2str(n)],', k = ',[' ',num2str(k)]);
+plot(p,'w')
+xlim([0, nCk0])
+text(ceil(nCk0/4), .94, str)
+
+plot_ind = plot_ind + 1;
+end % loop over k-values
+
+% display range specified
+if nargin == 3
+lims = varargin{1};
+axis(lims)
+end
+
+end
 </script></div>
 <div id="ch2-1-7" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-8" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
+</script></div>
+<div id="ch2-1-9" class="ptx-sagecell sagecell-octave"><script type="text/x-sage">
 </script></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch2-2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

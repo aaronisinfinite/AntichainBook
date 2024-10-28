@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "matlab\/octave",
-  "body": " matlab\/octave  The cells on this page are linked to each so that calculations done in one cell are available to others.  Evaluate the cell below before continuing.   After evaluating the cell below using desired and , the antichain's sizes, marginal values, etc... are available using A.size, A.marg, etc... A.size = sizes; A.marg = marginal values; A.vol = volumes; A.blym = blym; A.numk = n choose k; A.numk1 = n choose (k-1);            "
+  "body": " matlab\/octave  The cells on this page are linked to each so that calculations done in one cell are available to others.  Evaluate the cell below before continuing.   After evaluating the cell below using desired and , the antichain's sizes, marginal values, etc... are available using A.size, A.marg, etc... \/\/ A.size = sizes \/\/ A.marg = marginal values \/\/ A.vol = volumes \/\/ A.blym = blym \/\/ A.numk = n choose k \/\/ A.numk1 = n choose (k-1) \/\/            "
 },
 {
   "id": "ch2-2",

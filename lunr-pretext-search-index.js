@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "matlab\/octave",
-  "body": " matlab\/octave  here are sage cells using matlab\/octave syntax. they are as if in a notebook             "
+  "body": " matlab\/octave  The cells on this page are linked to each so that calculations done in one cell are available to others.  Evaluate the cell below before continuing.               "
 },
 {
   "id": "ch2-2",
